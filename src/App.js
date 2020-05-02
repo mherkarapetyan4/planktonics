@@ -1,11 +1,10 @@
-import React from 'react';
+import React , {useEffect}from 'react';
 import { connect } from "react-redux"
 import { getUsers } from "./actions/users"
 import { Route, Switch } from "react-router-dom"
 import HomePage from "./pages/Home"
 import LoginPage from "./pages/Login"
-function App(props) {
-
+function App() { 
   return (
     <div className="App">
       <Switch>

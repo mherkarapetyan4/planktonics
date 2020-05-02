@@ -13,10 +13,9 @@ export default function withAuth(Component) {
         }
 
         componentDidMount() {
-            if (this.isLoggedIn()) {
+            if (this.isLoggedIn()) {               
                 this.props.dispatch(isAuth())
-            } else { 
-                console.log("asdas")
+            } else {  
                 this.props.dispatch(getLogout())
             }
         }

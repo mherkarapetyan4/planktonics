@@ -24,6 +24,7 @@ const getLogoutFullFilled = () => {
 export const getLogin = (user) => {
     return (dispatch) => {
         localStorage.setItem("token", user.token)
+        localStorage.setItem("userId", user.id)
         dispatch(getLoginFullFilled(user.id))
     };
 };
@@ -31,6 +32,7 @@ export const getLogin = (user) => {
 export const getLogout = () => {
     return (dispatch) => {
         localStorage.setItem("token", "")
+        localStorage.setItem("userId", "")
         dispatch(getLogoutFullFilled())
     };
 };

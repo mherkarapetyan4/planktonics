@@ -1,0 +1,41 @@
+.Chat {
+  // width: 50%;
+  // margin: 0 auto;
+  height: 100vh;
+    overflow: hidden;
+  .ChatContent {
+    // height: 60vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px;               /* width of the entire scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: #1f2631;        /* color of the tracking area */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #0f1218;    /* color of the scroll thumb */
+      border-radius: 20px;        
+    }
+  }
+  h1 {
+    // text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .Chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 100%;
+  }
+
+  .ChatAction {margin-top: 30px;
+    display: flex;
+    width: 100%;
+  }
+}

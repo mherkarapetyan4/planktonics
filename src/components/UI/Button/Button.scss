@@ -1,0 +1,22 @@
+.Button {
+  background-color: #34404c;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  padding: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: #34404ca2;
+    svg {
+      fill: #8b97a3;
+    }
+  }
+  svg {
+    fill: #6e7a86;
+    width: 35px;
+    height:  auto;
+    transition: 0.3s;
+  }
+}

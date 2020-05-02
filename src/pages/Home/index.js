@@ -1,10 +1,13 @@
 import React from "react"
 import withAuth from "../../hoc/withAuth"
+import Tabs from "../../components/Tabs"
 class HomePage extends React.PureComponent {
-  render() {
-    return <div>
-      HOmeeee
-    </div>
+   render() {
+    return (
+      <div>
+        <Tabs />
+      </div>
+    )
   }
 }
 

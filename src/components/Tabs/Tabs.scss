@@ -1,0 +1,42 @@
+$listTabColor: #1f2631;
+$mainTabColor: #1a2229;
+
+.Tabs {
+  display: flex;  
+  .TabsHeader {
+    flex: 0.5;
+    border-right: 1px solid rgba($color: $mainTabColor, $alpha: 0.5);
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $listTabColor;
+    color: white; 
+    .TabsHeader_tabs {
+      div {
+        padding:30px 15px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          background-color: rgba($color: $mainTabColor, $alpha: 0.5);
+        }
+      }
+        .activeTab {
+          background-color: $mainTabColor;
+        }
+    }
+
+    .TabsHeader_exit {
+      cursor: pointer;
+      margin-top: 50px;
+      padding:30px 15px;
+      text-align: center;
+      background-color: rgb(196, 67, 67);
+    }
+    
+  }
+  .TabsContent {
+    background-color: $mainTabColor;
+    flex: 2;
+
+    padding: 0 30px;
+  }
+}

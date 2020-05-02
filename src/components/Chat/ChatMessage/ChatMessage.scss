@@ -1,0 +1,86 @@
+.ChatMessage {
+  display: flex; 
+  // align-items: center;
+  padding: 10px;
+  // border-top: 1px solid rgba($color: #ccc, $alpha: 0.05);
+  img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  .ChatMessage-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    margin-left: 20px;  
+    position: relative;
+    .ChatMessage-content__message{
+      background-color: #34404c;
+      width: 80%;
+      border-radius: 2px;
+      padding: 12px;
+      margin-bottom: 10px;
+      p { 
+        font-size: 16px;
+        color: #9fa8b3;     
+        word-break: break-all;
+      }
+    }   
+
+    span {      
+      color: #ccc;
+      font-style: italic;      
+      font-size: 0.7rem;
+    }
+
+    .ChatMessage-content_editable {
+      position: absolute;
+      top: 0;
+      right: 5px; 
+      color: white;
+      cursor: pointer;
+      
+    }
+
+    .contextMenu {
+      position: absolute;
+      top: 0;
+      right: 5px;  
+      background-color: #ccc;
+      border-radius: 2px;
+      .contextMenu_item {
+        font-size: 0.8rem;
+        padding: 5px;
+          cursor: pointer;
+        &:hover {
+          background-color: rgb(158, 158, 158);
+        }
+      }
+      
+    }
+  }
+}
+
+.ChatMessage-own {
+  flex-direction: row-reverse;
+
+  .ChatMessage-content {
+    margin-left: 0;  
+    margin-right: 20px;
+    align-items: flex-end;
+    
+  .ChatMessage-content__message{
+    background-color: #869eb4;
+   
+    p {  
+      color: #29313b;      
+    }
+  }   
+
+  }
+
+
+}
+

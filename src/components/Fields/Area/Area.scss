@@ -1,0 +1,44 @@
+$bg:#1f2631;
+
+.FieldArea {
+  background-color: $bg;
+  border-radius: 2px;
+  padding: 12px;
+  color: #fff;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+ 
+  white-space: pre-line;
+
+  width: 100%;
+  // .FieldArea_picker {
+  //   width: ;
+  // }
+}
+
+.FieldArea__wrapper {
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+  div {
+    margin: 5px;
+    cursor: pointer;
+    svg {
+      width: 30px;
+      fill: #6e7a86;
+    }
+    position: relative;
+
+    .FieldArea_picker {
+      position: absolute;
+      top: -400px;
+      left: -400px;
+    }
+    
+  }
+
+  
+}
